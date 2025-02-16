@@ -1,0 +1,1104 @@
+
+
+@font-face {
+    font-family: Raleway;
+    src: url(Fonts/Raleway.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Fonts/EugustoFreePersonalUse-Regular.otf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Fonts/Disruptors\ Script.otf);
+}
+
+@font-face {
+    font-family: Ubuntu Light;
+    src: url(Fonts/Ubuntu-Light.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Ubuntu Medium;
+    src: url(Fonts/Ubuntu-Medium.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(Fonts/Ubuntu-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Onest;
+    src: url(Fonts/Onest-VariableFont.ttf);
+}
+
+@font-face {
+    font-family: Sweet Mavka Script;
+    src: url(Fonts/Sweet\ Mavka\ Script.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--MainText);
+
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 70px;
+    color: rgb(72, 86, 119);
+    font-family: Arial;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: normal;
+
+    color: var(--Head);
+}
+
+h3 {
+    font-size: 42px;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 34px;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: 600;
+    color: white;
+}
+
+h5:hover{
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: yellow;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: Onest;
+    font-weight: bold;
+}
+
+p {
+    font-size: 24px;
+    font-family: Ubuntu Light;
+}
+
+p2 {
+    font-size: 16px;
+    font-family: Ubuntu;
+}
+
+p3 {
+    font-size: 14px;
+    font-family: Ubuntu;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Ubuntu;
+}
+
+ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+li::marker {
+    color: var(--Primary)
+}
+
+button {
+    background-color: yellow;
+    color: var(--Card);
+
+    border-radius: 30px;
+
+    font-family: Ubuntu;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    padding: 18px 35px;
+    border: 1px solid yellow;
+
+    width: fit-content;
+
+    transition: .3s ease-in-out;
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--Primary);
+}
+
+.anti-button {
+    background-color: transparent;
+    color: var(--Primary);
+}
+
+.anti-button:hover {
+    background-color: var(--Primary);
+    color: var(--Card);
+}
+
+html {
+    scroll-behavior: smooth;
+
+    --Card: white;
+    --BackgroundLight: #F1F6F9;
+    --BackgroundDark: rgb(102, 204, 102);
+    --Stroke: #DDC5B1;
+    --Accent1: #C19570;
+    --Primary: #00BA48;
+    --Hover: #AAC4E7;
+    --Head: #18212E;
+    --MainText: #464D58;
+    --Accent2: #DFECF8;
+    --mes: #6096DE;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+   
+  .back-to-top:hover {
+    background: #333;
+    text-decoration: none;
+  }
+  
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 90px;
+    padding: 20px 145px;
+
+    background-color: rgb(102, 204, 102);
+
+    border-bottom: 1px solid var(--BackgroundDark);
+}
+
+header p3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+header p3:hover{
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: yellow;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+header nav a {
+    font-family: Onest;
+    font-weight: 600;
+    position: relative;
+    color: white;
+}
+
+.teex {
+    font-family: Onest;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+header span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header span:hover{
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: yellow;
+
+}
+
+header span a {
+    font-family: Ubuntu;
+    font-weight: 600;
+    text-decoration: underline;
+    color: white;
+}
+
+header span a:hover{
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: yellow;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 145px;
+}
+
+footer a {
+    font-family: Ubuntu;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+footer p3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer p3:nth-child(2) b {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+#block-1 {
+    display: flex;
+    justify-content: space-between;
+
+    height: 850px;
+
+    border-bottom: 1px solid var(--BackgroundDark);
+}
+
+#block-1>div {
+    height: 100%;
+}
+
+#block-1-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 845px;
+}
+
+#block-1-1>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    flex: 1 1 0;
+
+    padding: 0 145px;
+}
+
+#block-1-1>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    height: 50px;
+    width: 100%;
+
+    padding-left: 145px;
+
+    border-top: 1px solid var(--BackgroundDark);
+}
+
+#block-1-1>div:nth-child(2) p2 {
+    display: block;
+    width: 100%;
+}
+
+#block-1-1>div:nth-child(1)>h1 {
+    font-family: Disruptors Script;
+    font-size: 130px;
+    color: rgb(72, 86, 119);
+    line-height: 100%;
+}
+
+#block-1-2 {
+    position: relative;
+
+    width: 1600px;
+
+
+    background: url(Images/comanda.jpg) no-repeat;
+
+}
+
+#block-1-2>button {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0;
+    border: 0;
+    padding: 15px;
+
+    rotate: 180deg;
+
+    background-color: var(--BackgroundDark);
+
+    transition: none;
+}
+
+#block-1-3 {
+    position: relative;
+
+    background-repeat: no-repeat;
+
+    background-position: 50px ;
+}
+
+#block-1-3>button {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0;
+    border: 0;
+    padding: 15px;
+
+    background-color: var(--Accent1);
+
+    transition: none;
+}
+
+#block-1-3>div:nth-child(1) {
+    position: absolute;
+    right: 40px;
+    top: 35%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: fit-content;
+}
+
+#block-1-3>div>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Primary);
+    border-radius: 1000px;
+    border: 0;
+    padding: 15px;
+}
+
+#block-1-3>div:last-child {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    height: 8px;
+}
+
+#block-1-3>div:last-child>rect {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 1000px;
+
+    background-color: var(--BackgroundDark);
+}
+
+#block-1-3>div:last-child>rect:first-child {
+    display: block;
+    width: 8px;
+    height: 8px;
+
+    background-color: var(--Accent1);
+}
+
+#block-2 {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--BackgroundDark);
+}
+
+#block-2-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+
+    width: 40%;
+    padding-left: 145px;
+    padding-right: 50px;
+    
+}
+
+#block-2-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+}
+
+#block-2-2>div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding: 0px;
+}
+
+#block-2-2>div>h3 {
+    color: rgb(72, 86, 119);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 100%;
+}
+
+#block-2-2>div>a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    text-transform: uppercase;
+    font-family: Onest;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+#block-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    padding: 100px 105px;
+    border-bottom: 1px solid var(--BackgroundDark);
+}
+
+#block-3-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+#block-3-1>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#block-3-1>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    text-decoration: underline;
+    color: rgb(72, 86, 119);
+}
+#block-3-1>a:hover{
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: rgb(32, 165, 54);
+
+}
+
+#block-3-radios input {
+    display: none;
+}
+
+#block-3-radios label {
+    border-radius: 1000px;
+    border: 1px solid var(--Stroke);
+    padding: 18px 35px;
+
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease-in-out;
+}
+
+#block-3-radios input:checked+label {
+    background-color: var(--Accent1);
+    border-color: var(--Accent1);
+    color: var(--Card);
+}
+
+#block-3>button {
+    align-self: center;
+}
+
+#block-3-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+.wide-card {
+    display: flex;
+    height: 500px;
+    max-width: 600px;
+
+    border: 1px solid var(--BackgroundDark);
+}
+
+.wide-card>div {
+    flex: 1 1 0;
+}
+
+.wide-card>div:first-child,
+.thick-card>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+.wide-card>div:first-child>span,
+.thick-card>div:first-child>span {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.wide-card>div:first-child,
+.thick-card>div:first-child {
+    background: url(Images/31.png) no-repeat;
+}
+#item-2{
+    background: url(Images/1.png) no-repeat;
+}
+#item-3{
+    background: url(Images/2.png) no-repeat;
+}
+#item-4{
+    background: url(Images/3.png) no-repeat;
+}
+#item-5{
+    background: url(Images/4.png) no-repeat;
+}
+#item-5{
+    background: url(Images/5.png) no-repeat;
+}
+#item-6{
+    background: url(Images/6.png) no-repeat;
+}
+#item-7{
+    background: url(Images/7.png) no-repeat;
+}
+#item-8{
+    background: url(Images/7.png) no-repeat;
+}
+.wide-card>div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    padding: 50px 40px;
+}
+
+.wide-card>div:last-child>div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wide-card>div:last-child>div>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.wide-card>div:last-child>div>span>p3,
+.thick-card>div:last-child>div>span>p3 {
+    text-decoration: line-through;
+}
+
+.wide-card>div:last-child>div>button {
+    width: 100%;
+}
+
+.thick-card {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    max-width: 285px;
+}
+
+.thick-card>div:first-child {
+    height: 100%;
+}
+
+.thick-card>div:last-child>h6 {
+    text-align: center;
+
+    padding: 20px;
+    border-bottom: 1px solid var(--BackgroundDark);
+}
+
+.thick-card>div:last-child>div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.card-tag {
+    padding: 5px 10px;
+    border-radius: 100px;
+    color: var(--Card);
+
+    font-size: 10px;
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+.card-tag:nth-child(1) {
+    background-color: #A65EDE;
+}
+
+.card-tag:nth-child(2) {
+    background-color: #DE665E;
+}
+
+.card-tag:nth-child(3) {
+    background-color: #DEA65E;
+}
+
+.card-attention {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Accent1);
+    padding: 0;
+    width: 40px;
+    height: 40px;
+
+    font-size: 24px;
+    font-family: Onest;
+    font-weight: 600;
+
+    border: none;
+    color: white;
+}
+
+.card-attention:hover {
+    background-color: var(--Accent1);
+}
+#block-4 {
+    position: relative;
+    display: flex;
+
+    height: 600px;
+    padding: 100px 145px;
+    background-color: rgb(102, 204, 102);
+    justify-content: center;
+    white-space: nowrap;
+}
+
+#block-4>div {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    width: 50%;
+}
+
+#block-4>div>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#block-4>div>div>span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 0;
+}
+
+#block-4>div>div>span>div {
+    display: flex;
+    gap: 10px;
+}
+
+#block-4>div>div>span>div>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(72, 86, 119);
+    border-radius: 1000px;
+    border: 0;
+    padding: 15px;
+}
+
+#block-4>div>div>span>div>button:hover, #block-1-3>div>button:hover {
+    background-color: var(--Hover);
+}
+
+#block-4>img {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+
+    width: 50%;
+}
+
+
+#modal-buy {
+    background-color: white;
+
+    border: none;
+    border-radius: 0 30px 0 30px;
+}
+
+#modal-buy>form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#modal-buy>form>h1 {
+    margin: 0 50px;
+    font-size: 32px;
+    text-align: center;
+}
+
+#modal-buy>form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-buy>form>div>label {
+    font-weight: 600;
+    font-size: 20px;
+    color: #717DA4;
+}
+
+#modal-buy>form>div>input {
+    border: none;
+    border-bottom: 1px solid black;
+
+    outline: none;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+#modal-buy>form>button {
+    background-color: #7DA4ED;
+    border-radius: 100px;
+    border: none;
+
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+
+    padding: 12px 88px;
+}
+
+.logot {
+    width: 160px;
+    
+
+}
+
+.vrah2 {
+    position: relative;
+    width: 600px;
+}
+
+.topNubex{
+	position: fixed;
+	right: 0px;
+	bottom: 45px;
+   }
+
+.footer {
+    color: #000;
+}
+
+#block-4>div>h2 {
+    color: rgb(255, 255, 255);
+}
+#block-4>div>div>span>a>h4{
+    color: rgb(255, 255, 255);    
+}
+
+#block-4>div>div>span>a>h4:hover{
+
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: yellow;
+}
+
+#block-4>div>div>span>nav>a{
+    color: rgb(255, 255, 255);    
+}
+
+#block-4>div>div>span>nav>a:hover{
+
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: yellow;
+
+}
+
+#block-4>div>div>span>a>h6{
+    color: rgb(255, 255, 255);    
+}
+
+#block-4>div>div>span>a>h6:hover{
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: yellow;
+    
+}
+
+nav {
+    background-color: rgb(102, 204, 102);
+    color: var(--Card);
+
+    border-radius: 30px;
+
+    font-family: Ubuntu;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    padding: 18px 35px;
+
+
+    width: fit-content;
+
+    transition: .3s ease-in-out;
+}
+
+nav :hover {
+    background-color: transparent;
+    color: yellow;
+    transition: .3s ease-in-out;
+}
+
+table{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.employee-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.employee-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.employee-name {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.employee-position {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+/* Основные стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Остается на месте при прокрутке */
+    z-index: 1; /* Поверх других элементов */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку, если нужно */
+    background-color: rgb(0,0,0); /* Цвет фона */
+    background-color: rgba(0,0,0,0.4); /* Черный с прозрачностью */
+}
+
+/* Стили для содержимого модального окна */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верха и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина содержимого */
+    max-width: 600px; /* Максимальная ширина */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Стили для кнопки закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.modal-content {
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
